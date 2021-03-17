@@ -14,8 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
                     name: "TrackingKit",
-                    url: "https://dl.dropbox.com/s/4qt64429to1rsjs/TrackingKit.framework.zip",
-                    checksum: "bd43dba1cc093957a0059989d862fc550a5aca840d3666e19d45f91f185add36"
+                    url: "https://dl.dropbox.com/s/ge1emtmqxwhq9gm/TrackingKit.xcframework.zip",
+                    checksum: "fd669b847ddcf03d9bd0506bf4980df5fdbace35fcc793907be4a5e59f88788f"
                 ),
     ]
 )
