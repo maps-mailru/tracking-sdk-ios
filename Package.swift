@@ -15,7 +15,7 @@ let package = Package(
         .binaryTarget(
                     name: "TrackingKit",
                     url: "https://dl.dropbox.com/s/nh86afx59a534px/TrackingKit.1.0.0.zip",
-                    checksum: "68c0ae39f487f12774fe936508e4e426"
+                    checksum: "f2b7a196516f6df7e41502832f4140ff934b97e9355a9f0273742357eb4e2a7f"
                 ),
     ]
 )
