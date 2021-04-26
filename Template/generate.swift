@@ -4,7 +4,7 @@ import Foundation
 
 let arguments = CommandLine.arguments
 
-if arguments.count < 3 {
+guard arguments.count >= 3 else {
     print("Invalid arguments count.\nUsage: \"xcrun swift Template/generate.swift <version> <checksum>\"")
     exit(1)
 }
@@ -12,8 +12,9 @@ if arguments.count < 3 {
 let version = arguments[1]
 let checksum = arguments[2]
 
-guard let file = FileManager.default.contents(atPath: "Template/Package_template.swift"), var template = String(data: file, encoding: .utf8) else {
-    print("Template not found")
+guard let file = FileManager.default.contents(atPath: "Template/Package_template.swift"),
+      var template = String(data: file, encoding: .utf8) else {
+    print("Template/Package_template.swift not found")
     exit(1)
 }
 
@@ -27,4 +28,4 @@ do {
     exit(1)
 }
 
-print("Success!")
+print("Generating Package.swift: successfully.\nBinary version: \(version)\nChecksum: \(checksum)")
