@@ -8,14 +8,15 @@ let package = Package(
     products: [
         .library(
             name: "TrackingKit",
-            targets: ["TrackingKit"]),
+            targets: ["TrackingKit"]
+        )
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
-                    name: "TrackingKit",
-                    url: "https://mmr.jfrog.io/artifactory/tracking-sdk-ios/0.0.12/TrackingKit.xcframework.zip",
-                    checksum: "e8ead4465d6446e3824984e2d82a1c879fd4adc7293fe2597f1405fed474f1ce"
-                ),
+            name: "TrackingKit",
+            url: "https://mmr.jfrog.io/artifactory/tracking-sdk-ios/$SDK_VERSION/TrackingKit.xcframework.zip",
+            checksum: "$SDK_CHECK_SUM"
+        )
     ]
 )
