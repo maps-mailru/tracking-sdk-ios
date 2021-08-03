@@ -68,6 +68,14 @@ tracker.stopTracking()
 Tracker.isDebugLoggingEnabled = true
 ```
 
+Вы также можете включить запись логов в текстовые файлы:
+
+```swift
+Tracker.writeLogsToFiles = true
+```
+
+Zip-архив с файлами логов можно получить по URL `tracker.logs`.
+
 Для отслеживания всех основных этапов работы трекера реализуйте протокол `TrackerDelegate` и назначьте соответствующее свойство трекеру:
 
 ```swift
