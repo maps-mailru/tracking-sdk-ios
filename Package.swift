@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TrackingKit",
-            url: "https://mmr.jfrog.io/artifactory/tracking-sdk-ios/1.0.51/TrackingKit.xcframework.zip",
-            checksum: "6a384d7c331eb52fb86b9385eb335fb8a053b34768d3bf5a041c2b6e700d420e"
+            url: "https://mmr.jfrog.io/artifactory/tracking-sdk-ios/1.0.52/TrackingKit.xcframework.zip",
+            checksum: "bab292929b9c33d18edfbb11c0b5b8fe8aa78e407264022842f5fb0f2f255cd0"
         )
     ]
 )
